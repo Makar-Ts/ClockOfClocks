@@ -1,0 +1,269 @@
+*[data-number='0'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg1x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x1 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x1 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg4x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='1'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /*   */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg0x3 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg1x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg1x1 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x3 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg2x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg2x1 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x3 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg3x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg3x1 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x3 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg4x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg4x1 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x2 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg4x3 { --1rot: 270deg; --2rot: 0deg; } /* ┌ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='2'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg1x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg1x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg2x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg2x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg2x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg3x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg3x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg4x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg4x3 { --1rot: 270deg; --2rot: 0deg; } /* ┘ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='3'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg1x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg1x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg2x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg2x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg2x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg3x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg3x2 { --1rot: 270deg; --2rot: 0deg; } /* ┌ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg4x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg4x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='4'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 270deg; --2rot: 0deg; } /* ┘ */
+  .seg0x2 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┘ */
+  .seg1x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x1 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg2x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg2x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg3x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg3x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg4x1 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg4x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg5x1 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg5x2 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='5'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg1x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg1x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg2x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg2x2 { --1rot: 90deg; --2rot: 90deg; } /* ┌ */
+  .seg2x3 { --1rot: 270deg; --2rot: 0deg; } /* └ */
+  .seg3x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg3x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg3x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg4x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg4x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='6'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg1x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg1x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg2x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg2x2 { --1rot: 90deg; --2rot: 90deg; } /* ┌ */
+  .seg2x3 { --1rot: 270deg; --2rot: 0deg; } /* ┘ */
+  .seg3x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg3x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg4x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='7'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg1x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg1x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg2x1 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg2x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg3x1 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg3x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg4x1 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg4x2 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg5x1 { --1rot: 225deg; --2rot: 45deg; } /*   */
+  .seg5x2 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='8'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg1x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg2x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg2x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg3x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg4x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}
+
+*[data-number='9'] {
+  .seg0x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg0x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg0x3 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg1x1 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg1x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg1x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x0 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg2x1 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg2x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg2x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg3x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg3x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg3x2 { --1rot: 270deg; --2rot: 0deg; } /* ┐ */
+  .seg3x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg4x0 { --1rot: 90deg; --2rot: 0deg; } /* ┌ */
+  .seg4x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg4x2 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+  .seg4x3 { --1rot: 0deg; --2rot: 0deg; } /* │ */
+  .seg5x0 { --1rot: 0deg; --2rot: 270deg; } /* └ */
+  .seg5x1 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x2 { --1rot: 90deg; --2rot: 90deg; } /* ─ */
+  .seg5x3 { --1rot: 0deg; --2rot: 90deg; } /* ┘ */
+}

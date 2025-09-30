@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock of Clocks</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div id="templates">
+    <div class="display" id="t_display" data-number='0'>
+      <div class="segment seg0x0"></div>
+      <div class="segment seg0x1"></div>
+      <div class="segment seg0x2"></div>
+      <div class="segment seg0x3"></div>
+
+      <div class="segment seg1x0"></div>
+      <div class="segment seg1x1"></div>
+      <div class="segment seg1x2"></div>
+      <div class="segment seg1x3"></div>
+
+      <div class="segment seg2x0"></div>
+      <div class="segment seg2x1"></div>
+      <div class="segment seg2x2"></div>
+      <div class="segment seg2x3"></div>
+
+      <div class="segment seg3x0"></div>
+      <div class="segment seg3x1"></div>
+      <div class="segment seg3x2"></div>
+      <div class="segment seg3x3"></div>
+
+      <div class="segment seg4x0"></div>
+      <div class="segment seg4x1"></div>
+      <div class="segment seg4x2"></div>
+      <div class="segment seg4x3"></div>
+
+      <div class="segment seg5x0"></div>
+      <div class="segment seg5x1"></div>
+      <div class="segment seg5x2"></div>
+      <div class="segment seg5x3"></div>
+    </div>
+  </div>
+
+  <div class="container" id="container">
+    
+  </div>
+
+  <script>
+    const gid = (a) => document.getElementById(a)
+    const set = (elem, num) => elem.setAttribute('data-number', String(num))
+
+
+    const container = gid('container');
+    const t_display = gid('t_display');
+
+    const blocks = [
+      ['H1', 'H2'],
+      ['M1', 'M2'],
+      ['S1', 'S2'],
+    ];
+
+    const elements = [];
+
+    for (let block of blocks) {
+      const bdiv = document.createElement('div');
+      bdiv.classList = 'block';
+
+      for (let display of block) {
+        const ddiv = t_display.cloneNode(true);
+        ddiv.setAttribute('id', display);
+
+        elements.push(ddiv);
+
+        bdiv.appendChild(ddiv);
+      }
+
+      container.appendChild(bdiv);
+    }
+
+
+    const update = () => {
+      const now = new Date();
+
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+
+      const date = `${hours}${minutes}${seconds}`;
+
+      for (let i in date) {
+        set(elements[i], date[i]);
+      }
+    }
+
+    update();
+    setInterval(update, 1);
+  </script>
+</body>
+</html>
