@@ -46,55 +46,6 @@
     
   </div>
 
-  <script>
-    const gid = (a) => document.getElementById(a)
-    const set = (elem, num) => elem.setAttribute('data-number', String(num))
-
-
-    const container = gid('container');
-    const t_display = gid('t_display');
-
-    const blocks = [
-      ['H1', 'H2'],
-      ['M1', 'M2'],
-      ['S1', 'S2'],
-    ];
-
-    const elements = [];
-
-    for (let block of blocks) {
-      const bdiv = document.createElement('div');
-      bdiv.classList = 'block';
-
-      for (let display of block) {
-        const ddiv = t_display.cloneNode(true);
-        ddiv.setAttribute('id', display);
-
-        elements.push(ddiv);
-
-        bdiv.appendChild(ddiv);
-      }
-
-      container.appendChild(bdiv);
-    }
-
-
-    const update = () => {
-      const now = new Date();
-
-      const hours = now.getHours().toString().padStart(2, '0');
-      const minutes = now.getMinutes().toString().padStart(2, '0');
-      const seconds = now.getSeconds().toString().padStart(2, '0');
-
-      const date = `${hours}${minutes}${seconds}`;
-
-      for (let i in date) {
-        set(elements[i], date[i]);
-      }
-    }
-
-    update();
-    setInterval(update, 1000);
-  </script>
+  <script type="module" src="./main.js"></script>
 </body>
 </html>

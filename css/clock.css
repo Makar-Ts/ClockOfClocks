@@ -47,7 +47,7 @@
 
           background-color: black;
 
-          transition: .15s;
+          transition: .3s ease-in-out;
         }
 
         &::after {
