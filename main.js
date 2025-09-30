@@ -18,16 +18,32 @@ const blocks = [
 const numberHeight = 6, numberWidth = 4;
 
 const symbols = {
-  ' ': [ 225, 45 ],
-  '│': [ 0, 0 ],
-  '─': [ 90, 90 ],
-  '┌': [ 90, 0 ],
-  '┐': [ 270, 0 ],
-  '└': [ 0, 270 ],
-  '┘': [ 0, 90 ],
+  ' ': [ 225, 225 ],
+  '│': [ 0, 180 ],
+  '─': [ 90, 270 ],
+  '┌': [ 90, 180 ],
+  '┐': [ 270, 180 ],
+  '└': [ 0, 90 ],
+  '┘': [ 0, 270 ],
 };
 
-const clockwiseRotation = (from, to) => from%360 == to ? from : from > to ? 360*Math.ceil(from / 360) + to : to
+const normalizeAngle = (angle) => ((angle % 360) + 360) % 360;
+
+const clockwiseRotation = (from, to) => {
+  const normalizedFrom = normalizeAngle(from);
+  const normalizedTo = normalizeAngle(to);
+  
+  if (normalizedFrom === normalizedTo) return from;
+  
+  const clockwiseDiff = (normalizedTo - normalizedFrom + 360) % 360;
+  
+  return from + clockwiseDiff;
+};
+
+const clockwiseRotationDelta = (from, to) => {
+  const target = clockwiseRotation(from, to);
+  return target - from;
+};
 
 
 /* -------------------------- Create HTML Elements -------------------------- */
@@ -54,7 +70,6 @@ for (let block of blocks) {
 }
 
 
-
 /* --------------------------- Symbols & Rotation --------------------------- */
 
 
@@ -66,19 +81,28 @@ async function main() {
       for (let column = 0; column < numberWidth; column++) {
         const element = data[number*numberHeight + row][column] || ' ';
         
-        console.log(number*numberHeight + row, data[number*row], element, `seg${row}x${column}`)
         const symbol = block.getElementsByClassName(`seg${row}x${column}`)[0];
 
-        const rot = [+(symbol.getAttribute('rot1') || 0), +(symbol.getAttribute('rot2') || 0)];
+        const rot = [
+          +(symbol.style.getPropertyValue('--1rot').replace('deg', '') || 0), 
+          +(symbol.style.getPropertyValue('--2rot').replace('deg', '') || 0)
+        ];
         const reqRot = symbols[element];
-
-        const clockwise = [
-          clockwiseRotation(rot[0], reqRot[0]),
-          clockwiseRotation(rot[1], reqRot[1])
-        ]
-
-        symbol.setAttribute('rot1', clockwise[0]);
-        symbol.setAttribute('rot2', clockwise[1]);
+        
+        let clockwise = [];
+        if ((clockwiseRotationDelta(rot[0], reqRot[0]) + clockwiseRotationDelta(rot[1], reqRot[1]))
+              <=
+            (clockwiseRotationDelta(rot[0], reqRot[1]) + clockwiseRotationDelta(rot[1], reqRot[0]))) {
+          clockwise = [
+            clockwiseRotation(rot[0], reqRot[0]),
+            clockwiseRotation(rot[1], reqRot[1])
+          ]
+        } else {
+          clockwise = [
+            clockwiseRotation(rot[0], reqRot[1]),
+            clockwiseRotation(rot[1], reqRot[0])
+          ]
+        }
 
         symbol.style.setProperty('--1rot', clockwise[0]+"deg");
         symbol.style.setProperty('--2rot', clockwise[1]+"deg");
